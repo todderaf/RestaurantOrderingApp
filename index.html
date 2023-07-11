@@ -1,9 +1,49 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-       <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-	<script src="index.js"></script>
-    </body>
-</html>
 
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+    <!-- Font Awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <img src="./images/hamburger.avif" alt="juicy hamburge" class="image" <div class="header-info">
+        <h1 class="header-title">Jimmy's Diner</h1>
+        <p class="header-desc">The best burgers and pizza in town</p>
+        </div>
+    </header>
+    <main>
+        <div id="feed">
+            <!--Menu items go here  -->
+        </div>
+
+        <section id="order-section" class="hidden">
+            <h2 class="checkout-title">Your Order</h2>
+            <div class="checkout-container">
+                <div class="checkout-items-container">
+                    <h2>Pizza</h2>
+                    <p class="remove-btn">remove</p>
+
+                </div>
+                <p class="checkout-price">$12</p>
+            </div>
+            <div class="total-price" id="total-price">
+                <h2>Total price:</h2>
+                <p id="calculated-price" class="checkout-price">$12</p>
+            </div>
+
+        </section>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
