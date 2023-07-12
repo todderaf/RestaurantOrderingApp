@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <img src="./images/hamburger.avif" alt="juicy hamburge" class="image" <div class="header-info">
+        <img src="./images/hamburger.avif" alt="juicy hamburger" class="image" <div class="header-info">
         <h1 class="header-title">Jimmy's Diner</h1>
         <p class="header-desc">The best burgers and pizza in town</p>
         </div>
@@ -25,7 +25,11 @@
         <div id="feed">
             <!--Menu items go here  -->
         </div>
-
+        <section id="thanks" class="thanks">
+            <div id="thank-you-banner" class="thank-you-banner hidden">
+                <!--Thank you banner goes here  -->
+            </div>
+        </section>
         <section id="order-section" class="hidden">
             <h2 class="checkout-title">Your Order</h2>
             <div id="checkout">
@@ -35,9 +39,20 @@
                 <h2>Total price:</h2>
                 <p id="calculated-price" class="checkout-price"></p>
             </div>
-
+            <div id="complete-order-btn" class="complete-order-btn">
+                Complete order
+            </div>
         </section>
     </main>
+    <div id="payment-modal" class="payment-modal">
+        <h2 class="payment-title">Enter Card Details</h2>
+        <form class="payment-form" id="form">
+            <input class="modal-input" id="payment-name" type="text" placeholder="Enter your name" required>
+            <input class="modal-input" id="payment-card" type="text" placeholder="Enter card number" required>
+            <input class="modal-input" id="payment-cvv" type="text" placeholder="Enter CVV" required>
+            <input type="submit" id="make-payment-btn" class="make-payment-btn" value="Pay">
+        </form>
+    </div>
     <script src="index.js" type="module"></script>
 </body>
 

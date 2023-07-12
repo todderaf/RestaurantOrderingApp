@@ -3,17 +3,7 @@ body {
     font-family: 'Smythe', cursive;
 }
 
-header, main {
-    width: 600px;
-    margin: 0 auto;
-}
-header {
-    position: relative;
-}
-.image {
-    width: 100%;
-    height: 210px;
-}
+/* typograpy and icons */
 
 .header-title, .header-desc {
     font-weight: 400;
@@ -34,8 +24,8 @@ header {
     top: 50;
     left: 20;
     font-size: 39px;
-
 }
+
 
 .checkout-title {
     font-style: normal;
@@ -43,21 +33,39 @@ header {
     margin-top: 25px;
 }
 
-.checkout-section {
-    display: block;
+.remove-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    color: #8B8B8B;
+    padding: 17px 0 0 0;
+ }
+
+
+/* layout */
+header, main {
+    width: 400px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+}
+
+.menu-item-title {
+    font-weight: 400;
+    color: #000;
+    margin: 0;
 }
 
 .menu-item-image {
-  width: 80px;
-  height: 80px;
+    width: 80px;
+    height: 80px;
 
-}
+  }
 
 .emoji-size {
     font-size: 40px;
-}
-.xyz {
-    width: 200px;
 }
 
 .plus {
@@ -69,29 +77,49 @@ header {
     padding: 8px;
 }
 
+.checkout-section {
+    display: block;
+}
+
+.thank-you-banner {
+    color: #065F46;
+    background-color: #ECFDF5;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    box-shadow: 0 3px 10px black;
+}
+
+.plus:hover, .remove-btn:hover {
+    cursor: pointer;
+    font-weight: bold;
+
+ }
+
+ .plus:hover {
+     border: 2px solid #000
+ }
+
+
+/* flex containers */
+
 .menu-item-container, .checkout-container {
     display: flex;
     align-items: center;
     margin:auto;
-    border-bottom: 1px solid #D2D2D2;
-    padding: 30px 0;
+
     justify-content: space-between;
 }
 
-.checkout-container {
-    border: none;
-    padding: 0;
+.menu-item-container {
+    border-bottom: 1px solid #D2D2D2;
+    padding: 30px 0;
 }
 
 .food-container, .checkout-items-container {
     display: flex;
     gap: 10px;
-}
-
-.menu-item-title {
-    font-weight: 400;
-    color: #000;
-    margin: 0;
 }
 
 .item-desc {
@@ -109,25 +137,77 @@ header {
     display: block;
 }
 
-.remove-btn {
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-style: normal;
-   font-size: 12px;
-   color: #8B8B8B;
-   padding: 17px 0 0 0;
-}
-
 .checkout-price {
-    padding-right: 15px;
+    padding-right: 8px;
 }
 
-.hidden {
-    display: block;
-}
+
 
 .total-price {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #000000;
     margin-top: 5px;
+}
+
+/* modals */
+.payment-modal {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    margin: auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid black;
+    box-shadow: 0 0 300px #000
+}
+
+.modal-input {
+    width: 90%;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.payment-form {
+    text-align: center;
+}
+
+
+.make-payment-btn {
+    background-color: #16Db99;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.complete-order-btn {
+    background-color: #16DB99;
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px ;
+    margin: 15px 0;
+}
+
+/* images */
+.image {
+    width: 100%;
+    height: 210px;
+}
+
+/* Utilities*/
+.hidden {
+    display: none;
 }
